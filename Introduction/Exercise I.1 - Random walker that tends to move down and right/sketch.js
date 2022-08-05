@@ -1,13 +1,9 @@
-// The Nature of Code
-// Daniel Shiffman
-// http://natureofcode.com
-
 let walker;
 
 function setup() {
   createCanvas(640,360);
   walker = new Walker();
-  background(127);
+  background(26, 24, 32);
 }
 
 function draw() {
@@ -22,12 +18,12 @@ class Walker {
   }
 
   render() {
-    stroke(0);
+    stroke(255);
     point(this.x,this.y);
   }
 
   step() {
-    var choice = floor(random(6));
+    let choice = floor(random(6));
     if (choice == 0 || choice == 1) {
       this.x++;
     } else if (choice == 2) {
@@ -37,7 +33,5 @@ class Walker {
     } else {
       this.y--;
     }
-    this.x = constrain(this.x,0,width-1);
-    this.y = constrain(this.y,0,height-1);
   }
 }

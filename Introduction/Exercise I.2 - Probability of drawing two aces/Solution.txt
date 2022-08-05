@@ -1,0 +1,2 @@
+Probability of drawing an ace from a deck of 52 cards is: 4/52 = 1/13.
+So drawing an ace twice in a row from a deck of 52 cards is: 4/52 ✕ 4/52 = 1/169.
